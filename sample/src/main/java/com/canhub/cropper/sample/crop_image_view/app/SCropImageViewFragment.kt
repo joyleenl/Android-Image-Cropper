@@ -136,7 +136,7 @@ internal class SCropImageViewFragment :
                 return true
             }
             R.id.main_action_rotate -> {
-                binding.cropImageView.rotateImage(90)
+                binding.cropImageView.rotateImage(5)
                 return true
             }
             R.id.main_action_flip_horizontally -> {

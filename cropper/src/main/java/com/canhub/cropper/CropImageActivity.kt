@@ -7,12 +7,14 @@ import android.content.pm.PackageManager
 import android.graphics.Bitmap
 import android.graphics.drawable.Drawable
 import android.net.Uri
+import android.os.Build
 import android.os.Bundle
 import android.os.Environment
 import android.util.Log
 import android.view.Menu
 import android.view.MenuItem
 import android.widget.Toast
+import androidx.annotation.RequiresApi
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.content.ContextCompat
 import androidx.core.graphics.BlendModeColorFilterCompat
@@ -49,6 +51,7 @@ open class CropImageActivity :
     private var cropImageView: CropImageView? = null
     private lateinit var binding: CropImageActivityBinding
 
+    @RequiresApi(Build.VERSION_CODES.M)
     public override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
 
